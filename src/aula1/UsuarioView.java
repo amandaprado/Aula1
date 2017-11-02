@@ -34,6 +34,7 @@ public class UsuarioView extends javax.swing.JFrame {
     private void InserirGrade(String dados) {
         DefaultTableModel modelo = (DefaultTableModel) tabelausuario.getModel();
         JSONObject jsonobj = new JSONObject(dados);
+        
 
         String[] teste = new String[4];
         teste[0] = Integer.toString(jsonobj.getInt("codigo"));
